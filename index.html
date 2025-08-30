@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora Hotel | Escape. Relax. Enjoy.</title>
+  <meta name="description" content="Aurora Hotel — boutique comfort, refined service, and unforgettable stays. Book your perfect room today." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#hero" aria-label="Aurora Hotel home">Aurora<span>Hotel</span></a>
+
+      <!-- Mobile nav toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary sm-hide" href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-media" role="img" aria-label="Hotel lobby with warm lighting and modern interior"></div>
+    <div class="container hero-inner">
+      <h1 class="hero-title">Escape. Relax. Enjoy.</h1>
+      <p class="hero-subtitle">A boutique hotel where modern comfort meets timeless elegance. Your best stay starts here.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#booking">Book your stay</a>
+        <a class="btn btn-ghost" href="#rooms">Explore rooms</a>
+      </div>
+      <div class="hero-badges">
+        <span>★ 4.9/5 Guest Rating</span>
+        <span>✓ Free Cancellation (48h)</span>
+        <span>☕ Breakfast Included</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="section booking">
+    <div class="container">
+      <h2 class="section-title">Check availability</h2>
+      <form class="booking-form" action="#" method="post">
+        <div class="form-row">
+          <label for="checkin">Check-in</label>
+          <input id="checkin" name="checkin" type="date" required />
+        </div>
+        <div class="form-row">
+          <label for="checkout">Check-out</label>
+          <input id="checkout" name="checkout" type="date" required />
+        </div>
+        <div class="form-row">
+          <label for="adults">Adults</label>
+          <select id="adults" name="adults" required>
+            <option value="1">1 Adult</option>
+            <option value="2" selected>2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4">4 Adults</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="children">Children</label>
+          <select id="children" name="children">
+            <option value="0" selected>0 Children</option>
+            <option value="1">1 Child</option>
+            <option value="2">2 Children</option>
+            <option value="3">3 Children</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="roomtype">Room type</label>
+          <select id="roomtype" name="roomtype" required>
+            <option value="standard" selected>Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Executive Suite</option>
+          </select>
+        </div>
+        <div class="form-row form-row-btn">
+          <button class="btn btn-primary btn-block" type="submit">Search rooms</button>
+        </div>
+      </form>
+      <p class="disclaimer">No prepayment required. You can cancel for free up to 48 hours before arrival.</p>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section id="rooms" class="section rooms">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Our rooms</h2>
+        <p class="section-subtitle">Thoughtfully designed spaces for every kind of traveler.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <figure class="card-media">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop" alt="Standard room with cozy bed and natural light" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Standard Room</h3>
+            <p class="muted">Queen bed · 22 m² · City view</p>
+            <ul class="features">
+              <li>High-speed Wi-Fi</li>
+              <li>Rainfall shower</li>
+              <li>Complimentary breakfast</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price"><strong>$109</strong> / night</span>
+              <a href="#booking" class="btn btn-outline">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?q=80&w=1600&auto=format&fit=crop" alt="Deluxe room with seating area and warm lighting" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Deluxe Room</h3>
+            <p class="muted">King bed · 28 m² · Partial sea view</p>
+            <ul class="features">
+              <li>Nespresso machine</li>
+              <li>Smart TV (55")</li>
+              <li>Premium linens</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price"><strong>$159</strong> / night</span>
+              <a href="#booking" class="btn btn-outline">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop" alt="Executive suite with living area and panoramic windows" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Executive Suite</h3>
+            <p class="muted">King bed · 45 m² · Panoramic view</p>
+            <ul class="features">
+              <li>Separate lounge</li>
+              <li>Soaking tub</li>
+              <li>Private balcony</li>
+            </ul>
+            <div class="card-footer">
+              <span class="price"><strong>$239</strong> / night</span>
+              <a href="#booking" class="btn btn-outline">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities" class="section amenities">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Amenities</h2>
+        <p class="section-subtitle">Everything you need for a seamless stay.</p>
+      </div>
+
+      <div class="grid amenity-grid">
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">🏊</div>
+          <h3>Rooftop Pool</h3>
+          <p class="muted">Sunset swims with skyline views.</p>
+        </div>
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">💪</div>
+          <h3>24/7 Fitness</h3>
+          <p class="muted">Modern cardio & weights studio.</p>
+        </div>
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">🥐</div>
+          <h3>Breakfast Buffet</h3>
+          <p class="muted">Fresh pastries, fruit & barista coffee.</p>
+        </div>
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">🧖</div>
+          <h3>Spa & Sauna</h3>
+          <p class="muted">Massages & relaxation treatments.</p>
+        </div>
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">🅿️</div>
+          <h3>Free Parking</h3>
+          <p class="muted">Secure on-site parking.</p>
+        </div>
+        <div class="amenity">
+          <div class="amenity-icon" aria-hidden="true">🛜</div>
+          <h3>Fast Wi-Fi</h3>
+          <p class="muted">Unlimited, hotel-wide coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">A glimpse into your next getaway.</p>
+      </div>
+      <div class="grid gallery-grid">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Lobby seating area" />
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop" alt="Outdoor pool with loungers" />
+        <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d52?q=80&w=1200&auto=format&fit=crop" alt="Room interior detail" />
+        <img src="https://images.unsplash.com/photo-1475855581690-80accde3ae2b?q=80&w=1200&auto=format&fit=crop" alt="Hotel restaurant table" />
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop" alt="Spa treatment room" />
+        <img src="https://images.unsplash.com/photo-1533777324565-a040eb52fac1?q=80&w=1200&auto=format&fit=crop" alt="City view at night" />
+        <img src="https://images.unsplash.com/photo-1505690654052-4ea5a0f1d88d?q=80&w=1200&auto=format&fit=crop" alt="Bathroom with marble finish" />
+        <img src="https://images.unsplash.com/photo-1505691723518-36f52ca7f3d8?q=80&w=1200&auto=format&fit=crop" alt="Room balcony" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Guest reviews</h2>
+        <p class="section-subtitle">Real stories from happy travelers.</p>
+      </div>
+      <div class="grid review-grid">
+        <blockquote class="review">
+          <p>“Immaculate rooms and the friendliest staff I’ve ever met. The rooftop pool is a dream!”</p>
+          <footer>— Emma L.</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>“Perfect location, delicious breakfast, and super comfortable beds. Will return!”</p>
+          <footer>— Marco R.</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>“Great value. Fast Wi-Fi for work and a relaxing spa after. Five stars.”</p>
+          <footer>— Sophia K.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta-inner">
+      <h2 class="cta-title">Summer special: up to 20% off</h2>
+      <p class="cta-subtitle">Book direct and unlock free late check-out.</p>
+      <a class="btn btn-primary" href="#booking">Claim offer</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-card card">
+        <div class="card-body">
+          <h3 class="card-title">Contact us</h3>
+          <p class="muted">We’re here to help 24/7.</p>
+          <ul class="contact-list">
+            <li><strong>Address:</strong> 123 Aurora Street, Your City</li>
+            <li><strong>Phone:</strong> +1 (555) 012-3456</li>
+            <li><strong>Email:</strong> hello@aurorahotel.com</li>
+          </ul>
+          <div class="map-placeholder" aria-label="Map placeholder">Map placeholder</div>
+        </div>
+      </div>
+
+      <form class="contact-form card" action="#" method="post">
+        <div class="card-body">
+          <h3 class="card-title">Send a message</h3>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="booking">Booking</option>
+                <option value="events">Events</option>
+                <option value="support">Support</option>
+              </select>
+            </div>
+            <div class="form-row form-row-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </div>
+            <div class="form-row form-row-full">
+              <button class="btn btn-primary btn-block" type="submit">Send message</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#hero">Aurora<span>Hotel</span></a>
+        <p class="muted">Boutique hospitality since 2008. Designed for comfort, crafted with care.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Policies">
+        <h4>Policies</h4>
+        <ul class="footer-links">
+          <li><a href="#">House rules</a></li>
+          <li><a href="#">Cancellation</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </nav>
+      <div class="newsletter">
+        <h4>Newsletter</h4>
+        <p class="muted">Be the first to hear about offers and events.</p>
+        <form class="newsletter-form" action="#" method="post">
+          <input type="email" name="newsletter_email" placeholder="Your email" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Aurora Hotel. All rights reserved.</p>
+      <a class="to-top" href="#hero" aria-label="Back to top">↑ Back to top</a>
+    </div>
+    <script>
+      // Update year without extra dependencies
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
